@@ -1,0 +1,151 @@
+.timeline-section{
+    width:100%;
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.timeline-container{
+    width:100%;
+    max-width:1280px;
+    margin:auto;
+    padding:0 24px;
+}
+
+.timeline-heading{
+    max-width:750px;
+    margin:auto;
+    text-align:center;
+}
+
+.timeline-heading p{
+    color:#2563eb;
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+.timeline-heading h2{
+    margin-top:20px;
+    font-size:48px;
+    font-weight:800;
+    color:#0f172a;
+    line-height:1.2;
+}
+
+.timeline-heading h2 span{
+    color:#2563eb;
+}
+
+.timeline-grid{
+    margin-top:70px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.timeline-card{
+    position:relative;
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:24px;
+
+    padding:35px 28px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+}
+
+.timeline-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(15,23,42,.10);
+}
+
+.timeline-step{
+    position:absolute;
+
+    top:20px;
+    right:20px;
+
+    font-size:48px;
+
+    font-weight:800;
+
+    color:#e2e8f0;
+}
+
+.timeline-icon{
+    width:72px;
+    height:72px;
+
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+}
+
+.timeline-card h3{
+    margin-top:24px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0f172a;
+}
+
+.timeline-card p{
+    margin-top:16px;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    color:#64748b;
+}
+
+@media(max-width:1200px){
+
+.timeline-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.timeline-section{
+    padding:80px 0;
+}
+
+.timeline-heading h2{
+    font-size:38px;
+}
+
+.timeline-grid{
+    grid-template-columns:1fr;
+}
+
+.timeline-card{
+    padding:30px 24px;
+}
+
+.timeline-step{
+    font-size:36px;
+}
+
+}   

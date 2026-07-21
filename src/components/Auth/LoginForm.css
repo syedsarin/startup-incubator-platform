@@ -1,0 +1,42 @@
+.auth-icon{
+    width:70px;
+    height:70px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+.forgot-password{
+    text-align:right;
+    margin-top:-8px;
+    margin-bottom:20px;
+}
+
+.forgot-password a{
+    color:#2563eb;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+}
+
+.forgot-password a:hover{
+    text-decoration:underline;
+}
+
+.forgot-link{
+    background:none;
+    border:none;
+    padding:0;
+    color:#2563eb;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.forgot-link:hover{
+    text-decoration:underline;
+}

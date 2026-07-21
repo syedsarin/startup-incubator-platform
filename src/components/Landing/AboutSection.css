@@ -1,0 +1,167 @@
+.landing-about {
+
+  padding:50px 40px;
+
+}
+
+
+
+.about-container {
+
+  max-width:1200px;
+
+  margin:auto;
+
+}
+
+
+
+/* Heading */
+
+.about-header {
+
+  text-align:center;
+
+  margin-bottom:30px;
+
+}
+
+
+
+.about-header h2 {
+
+  font-size:36px;
+
+  font-weight:700;
+
+  color:#111827;
+
+}
+
+
+
+.about-header p {
+
+  max-width:650px;
+
+  margin:10px auto 0;
+
+  color:#64748b;
+
+  line-height:1.6;
+
+}
+
+
+
+/* Cards */
+
+.about-cards {
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:20px;
+
+}
+
+
+
+.about-card {
+
+  background:white;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  min-height:180px;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.08);
+
+  transition:0.3s ease;
+
+}
+
+
+
+.about-card:hover {
+
+  transform:translateY(-6px);
+
+}
+
+
+
+/* Card Heading */
+
+.about-card h3 {
+
+  font-size:20px;
+
+  margin-bottom:12px;
+
+  color:#111827;
+
+}
+
+
+
+/* Bullet Description */
+
+.about-card p {
+
+  color:#64748b;
+
+  line-height:1.6;
+
+  font-size:14px;
+
+  white-space:pre-line;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+
+.about-cards{
+
+  grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.landing-about{
+
+  padding:35px 20px;
+
+}
+
+
+.about-cards{
+
+  grid-template-columns:1fr;
+
+}
+
+
+.about-header h2{
+
+  font-size:30px;
+
+}
+
+
+}

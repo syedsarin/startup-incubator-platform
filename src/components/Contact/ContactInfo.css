@@ -1,0 +1,168 @@
+.contact-info-section{
+    width:100%;
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.contact-info-container{
+    width:100%;
+    max-width:1280px;
+    margin:auto;
+    padding:0 24px;
+}
+
+.contact-info-heading{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+.contact-info-heading p{
+    color:#2563eb;
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+.contact-info-heading h2{
+    margin-top:20px;
+    font-size:48px;
+    font-weight:800;
+    color:#0f172a;
+}
+
+.contact-info-heading h2 span{
+    color:#2563eb;
+}
+
+.contact-info-grid{
+    margin-top:70px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+}
+
+.contact-info-card{
+
+    background:#ffffff;
+
+    padding:35px 28px;
+
+    border-radius:24px;
+
+    border:1px solid #e2e8f0;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+}
+
+.contact-info-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(15,23,42,.10);
+
+}
+
+.contact-info-icon{
+
+    width:72px;
+
+    height:72px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+}
+
+.contact-info-card h3{
+
+    margin-top:22px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.contact-info-card h4{
+
+    margin-top:14px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#2563eb;
+
+}
+
+.contact-info-card p{
+
+    margin-top:14px;
+
+    color:#64748b;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+@media(max-width:1100px){
+
+.contact-info-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-info-section{
+
+padding:80px 0;
+
+}
+
+.contact-info-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-info-heading h2{
+
+font-size:38px;
+
+}
+
+.contact-info-card{
+
+padding:30px 24px;
+
+}
+
+}

@@ -1,0 +1,163 @@
+.events-cta{
+    width:100%;
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.events-cta-container{
+    width:100%;
+    max-width:1280px;
+    margin:auto;
+    padding:0 24px;
+}
+
+.events-cta-box{
+    max-width:1100px;
+    margin:auto;
+
+    padding:80px 50px;
+
+    text-align:center;
+
+    border-radius:32px;
+
+    background:linear-gradient(135deg,#2563eb,#4338ca);
+
+    color:#ffffff;
+
+    box-shadow:0 20px 50px rgba(37,99,235,.25);
+}
+
+.events-cta-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.15);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+}
+
+.events-cta-box h2{
+    margin-top:28px;
+
+    font-size:50px;
+
+    font-weight:800;
+
+    line-height:1.2;
+}
+
+.events-cta-box h2 span{
+    display:block;
+
+    color:#dbeafe;
+}
+
+.events-cta-box p{
+    max-width:720px;
+
+    margin:28px auto 0;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#e2e8f0;
+}
+
+.events-cta-buttons{
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+}
+
+.events-cta-primary{
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:15px 32px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+    color:#2563eb;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.events-cta-primary:hover{
+    transform:translateY(-3px);
+}
+
+.events-cta-secondary{
+    padding:15px 32px;
+
+    border:1px solid rgba(255,255,255,.4);
+
+    border-radius:12px;
+
+    background:transparent;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.events-cta-secondary:hover{
+    background:rgba(255,255,255,.12);
+}
+
+@media(max-width:768px){
+
+.events-cta{
+    padding:80px 0;
+}
+
+.events-cta-box{
+    padding:60px 24px;
+}
+
+.events-cta-box h2{
+    font-size:38px;
+}
+
+.events-cta-box p{
+    font-size:16px;
+}
+
+}
