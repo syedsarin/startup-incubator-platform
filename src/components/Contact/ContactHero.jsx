@@ -35,14 +35,7 @@ function ContactHero() {
 
           </h1>
 
-          <p>
-
-            Have an idea or need expert guidance? Our team is ready
-            to help you with mentorship, incubation, funding support,
-            and startup growth opportunities.
-
-          </p>
-
+        
           <div className="contact-buttons">
 
             <button className="contact-primary-btn">

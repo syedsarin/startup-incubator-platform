@@ -35,9 +35,9 @@ function Hero() {
 
 
 
-       <h1>
-  TEST HERO COMPONENT
-</h1>
+        <h1>
+          Empowering Startups to Build, Launch, and Scale Globally 🚀
+        </h1>
 
 
 

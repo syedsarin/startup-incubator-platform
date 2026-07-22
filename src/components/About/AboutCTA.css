@@ -1,19 +1,21 @@
-.cta-section {
+.cta-section{
   width:100%;
-  padding:100px 0;
+  padding:65px 0;
   background:#f8fafc;
 }
 
-
-.cta-container {
+.cta-container{
   width:100%;
   max-width:1280px;
-  margin:auto;
+  margin:0 auto;
   padding:0 24px;
 }
 
+.cta-box{
 
-.cta-box {
+  width:100%;
+  max-width:700px;
+  margin:0 auto;
 
   background:linear-gradient(
     135deg,
@@ -21,76 +23,130 @@
     #4f46e5
   );
 
-  border-radius:32px;
-  padding:70px 40px;
+  border-radius:24px;
+
+  padding:50px 35px;
+
   text-align:center;
-  color:white;
+
+  color:#ffffff;
+
+  box-shadow:0 20px 50px rgba(37,99,235,.18);
 
 }
 
+.cta-box h2{
 
-.cta-box h2 {
+  font-size:38px;
 
-  font-size:48px;
   font-weight:800;
-  line-height:1.2;
+
+  line-height:0.2;
 
 }
 
+.cta-box p{
 
-.cta-box p {
+  max-width:560px;
 
-  max-width:650px;
-  margin:20px auto 0;
-  font-size:18px;
-  line-height:1.8;
+  margin:16px auto 0;
+
+  font-size:16px;
+
+  line-height:1.7;
+
   color:#dbeafe;
 
 }
 
+/* CTA Button */
 
-.cta-box button {
-
-  margin-top:35px;
+.cta-button{
 
   display:inline-flex;
+
   align-items:center;
+
+  justify-content:center;
+
   gap:10px;
 
-  padding:14px 28px;
+  margin-top:28px;
 
-  border-radius:12px;
+  padding:12px 26px;
 
-  background:white;
+  border-radius:10px;
+
+  background:#ffffff;
+
   color:#2563eb;
+
+  font-size:15px;
 
   font-weight:700;
 
-  border:none;
+  text-decoration:none;
 
-  cursor:pointer;
+  transition:all .3s ease;
 
-  transition:.3s;
-
-}
-
-
-.cta-box button:hover {
-
-  transform:translateY(-3px);
+  box-shadow:0 12px 30px rgba(0,0,0,.15);
 
 }
 
+.cta-button:hover{
+
+  transform:translateY(-4px);
+
+  background:#f8fafc;
+
+  box-shadow:0 18px 35px rgba(0,0,0,.2);
+
+}
+
+.cta-button svg{
+
+  transition:transform .3s ease;
+
+}
+
+.cta-button:hover svg{
+
+  transform:translateX(5px);
+
+}
 
 @media(max-width:768px){
 
-.cta-box{
-padding:50px 24px;
-}
+  .cta-section{
+    padding:50px 0;
+  }
 
+  .cta-box{
 
-.cta-box h2{
-font-size:34px;
-}
+    max-width:100%;
+
+    padding:40px 20px;
+
+    border-radius:20px;
+
+  }
+
+  .cta-box h2{
+    font-size:30px;
+  }
+
+  .cta-box p{
+    font-size:15px;
+  }
+
+  .cta-button{
+
+    width:200px;
+
+    padding:11px 22px;
+
+    margin-top:24px;
+
+  }
 
 }

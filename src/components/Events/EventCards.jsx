@@ -13,7 +13,7 @@ function EventCards({
 }) {
   const events = [
     {
-      title: "Startup Networking Summit",
+      title: "Workshops",
       date: "15 Aug 2026",
       time: "10:00 AM",
       location: "Mumbai",
@@ -21,7 +21,7 @@ function EventCards({
         "Meet entrepreneurs, investors, and mentors while expanding your startup network.",
     },
     {
-      title: "Funding & Investor Meetup",
+      title: "Bootcamps",
       date: "28 Aug 2026",
       time: "02:00 PM",
       location: "Pune",
@@ -29,7 +29,7 @@ function EventCards({
         "Learn fundraising strategies and connect directly with angel investors and VCs.",
     },
     {
-      title: "Product Development Workshop",
+      title: "Hackathons",
       date: "10 Sep 2026",
       time: "11:00 AM",
       location: "Nagpur",
@@ -37,7 +37,7 @@ function EventCards({
         "Build better products through practical sessions led by experienced founders.",
     },
     {
-      title: "Startup Pitch Competition",
+      title: "Demo Days",
       date: "20 Sep 2026",
       time: "04:00 PM",
       location: "Hyderabad",
@@ -45,7 +45,7 @@ function EventCards({
         "Present your startup idea to mentors and investors for valuable feedback.",
     },
     {
-      title: "Digital Marketing Masterclass",
+      title: "Startup Competitions",
       date: "05 Oct 2026",
       time: "01:00 PM",
       location: "Bengaluru",
@@ -53,7 +53,7 @@ function EventCards({
         "Discover proven marketing strategies to acquire customers and grow faster.",
     },
     {
-      title: "Founder Leadership Bootcamp",
+      title: "Webinars",
       date: "18 Oct 2026",
       time: "09:30 AM",
       location: "Delhi",

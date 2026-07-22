@@ -14,11 +14,11 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import BookConsultation from "./pages/BookConsultation";
-
+import Investors from "./pages/Investors";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Applications from "./pages/Applications";
-
+import FAQ from "./pages/FAQ";
 
 function App() {
   return (
@@ -37,12 +37,12 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/investors" element={<Investors />} /> 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-
-          
+          <Route path="/faqs" element={<FAQ />} />
           <Route path="/consultation" element={<BookConsultation />} />
+          
 
         </Route>
 

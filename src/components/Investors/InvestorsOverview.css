@@ -1,0 +1,347 @@
+.investor-section{
+
+  width:100%;
+
+  padding:80px 0;
+
+  background:#ffffff;
+
+}
+
+.investor-section.light{
+
+  background:#f8fafc;
+
+}
+
+.investor-container{
+
+  width:100%;
+
+  max-width:1280px;
+
+  margin:0 auto;
+
+  padding:0 24px;
+
+}
+
+/* Section Heading */
+
+.section-heading{
+
+  max-width:750px;
+
+  margin:0 auto 60px;
+
+  text-align:center;
+
+}
+
+.section-heading p{
+
+  color:#2563eb;
+
+  font-size:14px;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+.section-heading h2{
+
+  margin-top:18px;
+
+  font-size:42px;
+
+  font-weight:800;
+
+  color:#0f172a;
+
+}
+
+/* Investor Cards */
+
+.investor-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:24px;
+
+}
+
+.investor-card{
+
+  background:#ffffff;
+
+  border:1px solid #e2e8f0;
+
+  border-radius:22px;
+
+  padding:30px 24px;
+
+  text-align:center;
+
+  transition:.3s;
+
+}
+
+.investor-card svg{
+
+  color:#2563eb;
+
+  margin-bottom:20px;
+
+}
+
+.investor-card h3{
+
+  font-size:22px;
+
+  font-weight:700;
+
+  color:#0f172a;
+
+}
+
+.investor-card p{
+
+  margin-top:12px;
+
+  font-size:15px;
+
+  line-height:1.7;
+
+  color:#64748b;
+
+}
+
+.investor-card:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+/* Benefits */
+
+.benefit-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:24px;
+
+}
+
+.benefit-card{
+
+  background:#ffffff;
+
+  border:1px solid #e2e8f0;
+
+  border-radius:18px;
+
+  padding:28px 20px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:16px;
+
+  font-weight:600;
+
+  color:#334155;
+
+  transition:.3s;
+
+}
+
+.benefit-card svg{
+
+  color:#2563eb;
+
+}
+
+.benefit-card:hover{
+
+  transform:translateY(-6px);
+
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+/* Process */
+
+.process-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:24px;
+
+}
+
+.process-card{
+
+  background:#2563eb;
+
+  color:#ffffff;
+
+  border-radius:22px;
+
+  padding:35px 20px;
+
+  text-align:center;
+
+  transition:.3s;
+
+}
+
+.process-card svg{
+
+  margin-bottom:18px;
+
+}
+
+.process-card h3{
+
+  font-size:20px;
+
+  font-weight:700;
+
+}
+
+.process-card:hover{
+
+  transform:translateY(-8px);
+
+  background:#1d4ed8;
+
+}
+
+/* Stats */
+
+.stats-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:24px;
+
+}
+
+.stat-card{
+
+  background:#ffffff;
+
+  border-radius:22px;
+
+  border:1px solid #e2e8f0;
+
+  padding:35px 20px;
+
+  text-align:center;
+
+  transition:.3s;
+
+}
+
+.stat-card svg{
+
+  color:#2563eb;
+
+  margin-bottom:18px;
+
+}
+
+.stat-card h2{
+
+  font-size:38px;
+
+  font-weight:800;
+
+  color:#0f172a;
+
+}
+
+.stat-card p{
+
+  margin-top:10px;
+
+  color:#64748b;
+
+  font-size:15px;
+
+}
+
+.stat-card:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+/* Tablet */
+
+@media(max-width:1024px){
+
+.investor-grid,
+.benefit-grid,
+.process-grid,
+.stats-grid{
+
+  grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.investor-section{
+
+  padding:60px 0;
+
+}
+
+.section-heading{
+
+  margin-bottom:40px;
+
+}
+
+.section-heading h2{
+
+  font-size:32px;
+
+}
+
+.investor-grid,
+.benefit-grid,
+.process-grid,
+.stats-grid{
+
+  grid-template-columns:1fr;
+
+}
+
+}

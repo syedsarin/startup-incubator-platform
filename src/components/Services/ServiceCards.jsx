@@ -15,45 +15,100 @@ function ServiceCards({ limit }) {
 
     {
       icon: Users,
-      title: "Startup Mentorship",
-      description:
-        "Get guidance from experienced mentors to validate ideas and make better business decisions."
+        title: "Startup Mentorship",
+  description:
+    "• One-on-one guidance from experienced mentors.\n\n" +
+    "• Expert advice for startup growth.\n\n" +
+    "• Business strategy and planning support.\n\n" +
+    "• Industry networking opportunities.\n\n" +
+    "• Personalized mentorship for founders."
+
     },
 
     {
       icon: Wallet,
-      title: "Funding Support",
-      description:
-        "Connect with investors and explore funding opportunities to scale your startup."
+      title: "Business Development",
+  description:
+    "• Build sustainable business models.\n\n" +
+    "• Develop effective growth strategies.\n\n" +
+    "• Market research and validation.\n\n" +
+    "• Improve operational efficiency.\n\n" +
+    "• Scale startups with expert guidance."
     },
 
     {
       icon: Lightbulb,
-      title: "Business Strategy",
-      description:
-        "Build effective strategies for growth, market positioning, and long-term success."
+      title: "Product Development",
+  description:
+    "• Web and mobile application development.\n\n" +
+    "• AI and SaaS product solutions.\n\n" +
+    "• Cloud-based application development.\n\n" +
+    "• Prototype and MVP development.\n\n" +
+    "• End-to-end technical support."
     },
 
     {
       icon: Code,
-      title: "Technology Support",
-      description:
-        "Get technical guidance for building scalable products and digital solutions."
+      title: "Technology Consulting",
+  description:
+    "• AI and machine learning solutions.\n\n" +
+    "• Cloud architecture and migration.\n\n" +
+    "• Cybersecurity best practices.\n\n" +
+    "• DevOps and automation services.\n\n" +
+    "• Custom software development."
     },
 
     {
       icon: Megaphone,
-      title: "Marketing Support",
-      description:
-        "Improve your brand visibility through marketing guidance and growth strategies."
+        title: "Legal Support",
+  description:
+    "• Company registration assistance.\n\n" +
+    "• Intellectual property guidance.\n\n" +
+    "• Trademark registration support.\n\n" +
+    "• Business compliance assistance.\n\n" +
+    "• Legal advisory for startups."
+
     },
 
     {
       icon: Settings,
-      title: "Startup Operations",
-      description:
-        "Optimize your startup processes with expert operational support."
-    }
+   title: "Marketing Support",
+  description:
+    "• Brand identity and positioning.\n\n" +
+    "• Digital marketing strategies.\n\n" +
+    "• SEO optimization for startups.\n\n" +
+    "• Social media marketing support.\n\n" +
+    "• Growth marketing and customer acquisition."
+    },
+
+    {
+      icon: Settings,
+   title: "Startup Resources",
+  description:
+    "• Startup learning hub and guides.\n\n" +
+    "• Business plan and strategy templates.\n\n" +
+    "• Business Model Canvas resources.\n\n" +
+    "• Pitch deck and financial templates.\n\n" +
+    "• Founder handbook and practical toolkits."
+    },
+
+    
+{
+      icon: Settings,
+    title: "Knowledge Center",
+  description:
+    "• Startup blogs and expert articles.\n\n" +
+    "• Educational videos and podcasts.\n\n" +
+    "• Live webinars and workshops.\n\n" +
+    "• Research papers and case studies.\n\n" +
+    "• Learning resources for entrepreneurs."
+    },
+
+    
+    
+
+
+    
 
   ];
 

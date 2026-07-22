@@ -1,102 +1,184 @@
-.hero-section {
-  width: 100%;
-  padding: 100px 0;
-  background: #f8fafc;
+.hero-section{
+  width:100%;
+  padding:50px 0;
+  background:#f8fafc;
 }
 
-.hero-container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 24px;
+.hero-container{
+  width:100%;
+  max-width:1280px;
+  margin:0 auto;
+  padding:0 24px;
 }
 
-/* Changed */
-.about-hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
+/* Hero Content */
+
+.about-hero-content{
+  max-width:700px;
+  margin:0 auto;
+  text-align:center;
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  border-radius: 999px;
-  background: #dbeafe;
-  color: #2563eb;
-  font-size: 14px;
-  font-weight: 600;
+/* Badge */
+
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:8px 18px;
+
+  border-radius:999px;
+
+  background:#dbeafe;
+  color:#2563eb;
+
+  font-size:13px;
+  font-weight:600;
 }
 
-/* Changed */
-.about-hero-content h1 {
-  margin-top: 32px;
-  font-size: 60px;
-  font-weight: 800;
-  line-height: 1.1;
-  color: #0f172a;
+/* Heading */
+
+.about-hero-content h1{
+  margin-top:18px;
+
+  font-size:52px;
+
+  font-weight:800;
+
+  line-height:1.15;
+
+  color:#0f172a;
 }
 
-/* Changed */
-.about-hero-content h1 span {
-  display: block;
-  color: #2563eb;
+.about-hero-content h1 span{
+  display:block;
+  color:#2563eb;
 }
 
-/* Changed */
-.about-hero-content p {
-  max-width: 700px;
-  margin: 24px auto 0;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #64748b;
+/* Description */
+
+.about-hero-content p{
+  max-width:600px;
+
+  margin:16px auto 0;
+
+  font-size:17px;
+
+  line-height:1.7;
+
+  color:#64748b;
 }
 
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 40px;
+/* Buttons */
+
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+
+  margin-top:24px;
 }
 
-.primary-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 14px 26px;
-  border-radius: 12px;
-  background: #2563eb;
-  color: white;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: .3s;
+.primary-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:12px 24px;
+
+  border-radius:10px;
+
+  background:#2563eb;
+  color:#ffffff;
+
+  font-weight:600;
+
+  border:none;
+
+  cursor:pointer;
+
+  transition:.3s;
 }
 
-.primary-btn:hover {
-  background: #1d4ed8;
+.primary-btn:hover{
+  background:#1d4ed8;
 }
 
-.secondary-btn {
-  padding: 14px 26px;
-  border-radius: 12px;
-  border: 1px solid #cbd5e1;
-  background: white;
-  color: #334155;
-  font-weight: 600;
-  cursor: pointer;
+.secondary-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:12px 24px;
+
+  border-radius:10px;
+
+  border:1px solid #cbd5e1;
+
+  background:#ffffff;
+
+  color:#334155;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.3s;
 }
+
+.secondary-btn:hover{
+  background:#f1f5f9;
+}
+
+/* CTA Button */
+
+.cta-button{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  padding:12px 24px;
+
+  border-radius:10px;
+
+  background:#2563eb;
+  color:#ffffff;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  transition:.3s;
+}
+
+.cta-button:hover{
+  background:#1d4ed8;
+}
+
+/* Responsive */
 
 @media(max-width:768px){
+
+.hero-section{
+  padding:35px 0;
+}
+
+.hero-container{
+  padding:0 16px;
+}
+
+.about-hero-content{
+  max-width:100%;
+}
 
 .about-hero-content h1{
   font-size:38px;
 }
 
-.hero-container{
-  padding:0 16px;
+.about-hero-content p{
+  max-width:100%;
+  font-size:16px;
 }
 
 .hero-buttons{
@@ -104,21 +186,10 @@
   align-items:center;
 }
 
+.primary-btn,
+.secondary-btn{
+  width:220px;
+  justify-content:center;
 }
 
-.cta-button{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  padding:14px 28px;
-  border-radius:12px;
-  background:#2563eb;
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
-  transition:.3s;
-}
-
-.cta-button:hover{
-  background:#1d4ed8;
 }

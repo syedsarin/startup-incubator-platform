@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -6,55 +7,82 @@ function Footer() {
 
       <div className="footer-container">
 
+        {/* Brand */}
+
         <div className="footer-brand">
-          <h2>
-            StartupHub 🚀
-          </h2>
+
+          <h2>StartupHub 🚀</h2>
 
           <p>
-            Empowering founders to build, connect, and grow successful startups.
+            Empowering entrepreneurs, innovators, and startups through
+            mentorship, incubation, funding support, and a thriving startup
+            ecosystem.
           </p>
+
         </div>
 
+
+        {/* Quick Links */}
 
         <div className="footer-links">
 
-          <h3>
-            Quick Links
-          </h3>
+          <h3>Quick Links</h3>
 
-          <a href="#">
-            Home
-          </a>
+          <a href="/">Home</a>
 
-          <a href="#">
-            Startups
-          </a>
+          <a href="/about">About</a>
 
-          <a href="#">
-            Community
-          </a>
+          <a href="/programs">Programs</a>
 
-          <a href="#">
-            Contact
-          </a>
+          <a href="/services">Services</a>
+
+          <a href="/mentors">Mentors</a>
+
+          <a href="/events">Events</a>
+
+          <a href="/blog">Blog</a>
+
+          <a href="/contact">Contact</a>
 
         </div>
 
 
+        {/* Resources */}
+
+        <div className="footer-links">
+
+          <h3>Resources</h3>
+
+          <a href="#">Startup Resources</a>
+
+          <a href="#">Community</a>
+
+          <a href="#">Success Stories</a>
+
+          <a href="#">Investors</a>
+
+          <a href="#">Startup Directory</a>
+
+          <a href="#">FAQs</a>
+
+         <Link to="/register">Apply Now</Link>
+
+        </div>
+
+
+        {/* Contact */}
+
         <div className="footer-contact">
 
-          <h3>
-            Contact
-          </h3>
+          <h3>Contact</h3>
 
-          <p>
-            Email: support@startuphub.com
-          </p>
+          <p>📧 support@startuphub.com</p>
 
-          <p>
-            Location: India
-          </p>
+          <p>📍 Hyderabad, Telangana, India</p>
+
+          <p>📞 +91 XXXXX XXXXX</p>
+
+          <p>🌐 Mon - Fri | 9:00 AM - 6:00 PM</p>
 
         </div>
 
@@ -63,7 +91,19 @@ function Footer() {
 
       <div className="footer-bottom">
 
-        © 2026 StartupHub. All rights reserved.
+        <p>
+          © 2026 StartupHub. All Rights Reserved.
+        </p>
+
+        <div className="footer-bottom-links">
+
+          <a href="#">Privacy Policy</a>
+
+          <span>|</span>
+
+          <a href="#">Terms & Conditions</a>
+
+        </div>
 
       </div>
 

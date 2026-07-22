@@ -2,22 +2,23 @@ import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-
 function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
 
 
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Programs", path: "/programs" },
-    { name: "Services", path: "/services" },
-    { name: "Mentors", path: "/mentors" },
-    { name: "Events", path: "/events" },
-    { name: "Blog", path: "/blog" },
-    { name: "Contact", path: "/contact" },
-  ];
+const navItems = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Programs", path: "/programs" },
+  { name: "Services", path: "/services" },
+  { name: "Mentors", path: "/mentors" },
+  { name: "Investors", path: "/investors" },
+  { name: "Events", path: "/events" },
+  { name: "Blog", path: "/blog" },
+  { name: "Contact", path: "/contact" },
+  { name: "FAQs", path: "/faqs" },
+];
 
 
   return (
@@ -103,7 +104,7 @@ function Navbar() {
               transition"
             >
 
-              Register
+              Apply Now
 
             </Link>
 
@@ -163,7 +164,7 @@ function Navbar() {
             ))}
 
 
-
+            <Link to="/investors">Investors</Link>
             <Link
 
               to="/login"

@@ -1,5 +1,15 @@
 import { motion } from "framer-motion";
-import { Target, Rocket, Users, Lightbulb } from "lucide-react";
+import {
+  Target,
+  Rocket,
+  Users,
+  Lightbulb,
+  Trophy,
+  BriefcaseBusiness,
+  MessageCircle,
+  CheckCircle,
+} from "lucide-react";
+
 import "./AboutContent.css";
 
 function AboutContent() {
@@ -33,39 +43,39 @@ function AboutContent() {
     "Strong Entrepreneur Community"
   ];
 
+  const successStories = [
+  "Startup Journey",
+  "Funding Raised",
+  "Awards & Recognition",
+  "Customer Growth",
+  "Revenue Milestones",
+  "Founder Testimonials"
+];
+
+const community = [
+  "Discussion Forums",
+  "Slack & Discord Community",
+  "Founder Networking",
+  "Startup Meetups",
+  "Alumni Network",
+  "Knowledge Sharing"
+];
+
+const careers = [
+  "Startup Jobs",
+  "Internships",
+  "Founder Opportunities",
+  "Volunteer Programs",
+  "Career Guidance",
+  "Hiring Network"
+];
 
   return (
     <>
 
       {/* About Story */}
 
-      <section className="content-section">
-
-        <div className="content-container">
-
-          <div className="content-heading">
-
-            <p>
-              About StartupHub
-            </p>
-
-            <h2>
-              Supporting Entrepreneurs From Idea To Success
-            </h2>
-
-            <span>
-              StartupHub is an innovation-driven incubation platform
-              helping aspiring founders validate ideas, build products,
-              connect with mentors, and grow successful businesses.
-            </span>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
+      
 
       {/* Mission Vision Values */}
 
@@ -142,12 +152,9 @@ function AboutContent() {
 
           <div className="content-heading">
 
-            <p>
-              Why Choose Us
-            </p>
-
+            
             <h2>
-              Everything Founders Need To Grow
+              Why Choose Us
             </h2>
 
           </div>
@@ -178,6 +185,131 @@ function AboutContent() {
 
       </section>
 
+{/* Success Stories */}
+
+<section className="content-section light">
+
+  <div className="content-container">
+
+    <div className="content-heading">
+
+    
+      <h2>Success Stories</h2>
+
+      <span>
+        We proudly showcase the inspiring journeys of startups that have
+        grown through our incubation ecosystem.
+      </span>
+
+    </div>
+
+    <div className="feature-grid">
+
+      {successStories.map((item) => (
+
+        <div
+          key={item}
+          className="feature-card"
+        >
+          <Trophy size={30} />
+
+          {item}
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+{/* Community */}
+
+<section className="content-section">
+
+  <div className="content-container">
+
+    <div className="content-heading">
+
+      <h2>Community</h2>
+
+      <span>
+        Connect with entrepreneurs, mentors, investors, and innovators
+        through an active startup community.
+      </span>
+
+    </div>
+
+    <div className="feature-grid">
+
+      {community.map((item) => (
+
+        <div
+          key={item}
+          className="feature-card"
+        >
+
+          <MessageCircle size={30} />
+
+          {item}
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+{/* Career Center */}
+
+<section className="content-section light">
+
+  <div className="content-container">
+
+    <div className="content-heading">
+
+      <p>Career Center</p>
+
+      <h2>Grow Your Career In The Startup Ecosystem</h2>
+
+      <span>
+        Explore startup jobs, internships, founder opportunities,
+        and volunteer programs.
+      </span>
+
+    </div>
+
+    <div className="feature-grid">
+
+      {careers.map((item) => (
+
+        <div
+          key={item}
+          className="feature-card"
+        >
+
+          <BriefcaseBusiness size={30} />
+
+          {item}
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
 
     </>
   );
