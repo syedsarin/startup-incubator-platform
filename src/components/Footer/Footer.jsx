@@ -24,51 +24,49 @@ function Footer() {
 
         {/* Quick Links */}
 
-        <div className="footer-links">
+      <div className="footer-links">
 
-          <h3>Quick Links</h3>
+  <h3>Quick Links</h3>
 
-          <a href="/">Home</a>
+  <Link to="/">Home</Link>
 
-          <a href="/about">About</a>
+  <Link to="/about">About</Link>
 
-          <a href="/programs">Programs</a>
+  <Link to="/programs">Programs</Link>
 
-          <a href="/services">Services</a>
+  <Link to="/services">Services</Link>
 
-          <a href="/mentors">Mentors</a>
+  <Link to="/mentors">Mentors</Link>
 
-          <a href="/events">Events</a>
+  <Link to="/events">Events</Link>
 
-          <a href="/blog">Blog</a>
+  <Link to="/blog">Blog</Link>
 
-          <a href="/contact">Contact</a>
+  <Link to="/contact">Contact</Link>
 
-        </div>
-
+</div>
 
         {/* Resources */}
 
         <div className="footer-links">
 
-          <h3>Resources</h3>
+  <h3>Resources</h3>
 
-          <a href="#">Startup Resources</a>
+  <a href="#">Startup Resources</a>
 
-          <a href="#">Community</a>
+  <a href="#">Community</a>
 
-          <a href="#">Success Stories</a>
+  <a href="#">Success Stories</a>
 
-          <a href="#">Investors</a>
+  <a href="#">Investors</a>
 
-          <a href="#">Startup Directory</a>
+  <a href="#">Startup Directory</a>
 
-          <a href="#">FAQs</a>
+  <Link to="/faqs">FAQs</Link>
 
-         <Link to="/register">Apply Now</Link>
+  <Link to="/register">Apply Now</Link>
 
-        </div>
-
+</div>
 
         {/* Contact */}
 
