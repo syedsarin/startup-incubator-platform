@@ -1,6 +1,6 @@
 import "./InvestorsOverview.css";
-import investorsImage from "../../assets/images/investors/investors-banner.png";
 import { motion } from "framer-motion";
+import investorsImage from "../../assets/images/Investors/Investors-banner.png";
 import { Link } from "react-router-dom";
 import {
   HandCoins,

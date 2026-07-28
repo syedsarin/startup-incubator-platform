@@ -1,8 +1,7 @@
 import "./InvestorsHero.css";
 import { motion } from "framer-motion";
 import { TrendingUp } from "lucide-react";
-import investorsHeroImage from "../../assets/images/investors/investors-hero.png";
-
+import investorsHeroImage from "../../assets/images/Investors/investors-hero.png";
 
 function InvestorsHero() {
 

@@ -1,8 +1,7 @@
 import "./InvestorsSection.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import investorsImage from "../../assets/images/investors/investors-banner.png";
-
+import investorsImage from "../../assets/images/Investors/Investors-banner.png";
 
 const InvestorsSection = () => {
 
