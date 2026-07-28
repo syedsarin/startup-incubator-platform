@@ -6,10 +6,7 @@ import {
   MapPin,
   Phone,
   Clock,
-  Linkedin,
-  Twitter,
-  Instagram,
-  Youtube
+  Globe
 } from "lucide-react";
 
 
@@ -56,30 +53,9 @@ function Footer() {
           <div className="footer-social">
 
 
-            <a href="#">
+            <a href="#" aria-label="Website">
 
-              <Linkedin size={18}/>
-
-            </a>
-
-
-            <a href="#">
-
-              <Twitter size={18}/>
-
-            </a>
-
-
-            <a href="#">
-
-              <Instagram size={18}/>
-
-            </a>
-
-
-            <a href="#">
-
-              <Youtube size={18}/>
+              <Globe size={18}/>
 
             </a>
 
