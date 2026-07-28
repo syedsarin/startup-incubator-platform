@@ -1,5 +1,7 @@
 import "./EventCards.css";
 import { motion } from "framer-motion";
+import eventsImage from "../../assets/images/events/events-banner.png";
+import { Link } from "react-router-dom";
 import {
   CalendarDays,
   Clock,
@@ -11,6 +13,7 @@ function EventCards({
   limit,
   showButton = true,
 }) {
+
   const events = [
     {
       title: "Workshops",
@@ -67,20 +70,65 @@ function EventCards({
     : events;
 
   return (
+
     <section className="events-section">
 
       <div className="events-container">
 
-        <div className="events-heading">
+        {/* Hero Section */}
 
-          <p>UPCOMING EVENTS</p>
+        {/* Hero Section */}
 
-          <h2>
-            Join Our Startup
-            <span> Community Events</span>
-          </h2>
+<div className="events-hero">
 
-        </div>
+  <motion.div
+    className="events-content"
+    initial={{ opacity: 0, x: -50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.6 }}
+  >
+
+    <p className="event-tag">
+      Our Events
+    </p>
+
+    <h2>
+      Join Our Startup Community Events
+    </h2>
+
+    <p className="events-description">
+      Participate in workshops, bootcamps, hackathons, demo days,
+      startup competitions, and webinars designed to help founders
+      learn, connect, collaborate, and grow their startups.
+    </p>
+
+    <Link
+      to="/register"
+      className="event-btn"
+    >
+      Register Now
+    </Link>
+
+  </motion.div>
+
+
+  <motion.div
+    className="events-image"
+    initial={{ opacity: 0, x: 50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.6 }}
+  >
+
+    <img
+      src={eventsImage}
+      alt="Startup Events"
+    />
+
+  </motion.div>
+
+</div>
+
+        {/* Event Cards */}
 
         <div className="events-grid">
 
@@ -106,9 +154,16 @@ function EventCards({
 
               </div>
 
-              <h3>{event.title}</h3>
 
-              <p>{event.description}</p>
+              <h3>
+                {event.title}
+              </h3>
+
+
+              <p>
+                {event.description}
+              </p>
+
 
               <div className="event-info">
 
@@ -120,6 +175,7 @@ function EventCards({
 
                 </span>
 
+
                 <span>
 
                   <MapPin size={16} />
@@ -129,6 +185,7 @@ function EventCards({
                 </span>
 
               </div>
+
 
               {showButton && (
 
@@ -151,7 +208,9 @@ function EventCards({
       </div>
 
     </section>
+
   );
+
 }
 
 export default EventCards;

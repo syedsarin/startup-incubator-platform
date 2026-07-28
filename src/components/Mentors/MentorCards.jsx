@@ -6,144 +6,191 @@ import {
   DollarSign,
   Code,
   Globe,
-  ArrowRight,
 } from "lucide-react";
 
-function MentorCards({
-  limit,
-  showButton = true,
-}) {
+
+function MentorCards({ limit }) {
+
 
   const mentors = [
+
     {
-      name: "Rahul Sharma",
-      role: "Startup Founder",
-      icon: Briefcase,
-      experience: "12+ Years Experience",
+      name:"Rahul Sharma",
+      role:"Startup Founder",
+      icon:Briefcase,
+      experience:"12+ Years Experience",
       description:
-        "Built and scaled multiple successful startups while mentoring hundreds of founders.",
+      "Built and scaled multiple startups while helping founders create successful businesses."
     },
+
+
     {
-      name: "Priya Mehta",
-      role: "Angel Investor",
-      icon: DollarSign,
-      experience: "50+ Startup Investments",
+      name:"Priya Mehta",
+      role:"Angel Investor",
+      icon:DollarSign,
+      experience:"50+ Startup Investments",
       description:
-        "Helps founders raise capital, prepare investor pitches, and build sustainable businesses.",
+      "Helps startups with fundraising, investor preparation and business strategy."
     },
+
+
     {
-      name: "Amit Verma",
-      role: "Technology Expert",
-      icon: Code,
-      experience: "Software Architect",
+      name:"Amit Verma",
+      role:"Technology Expert",
+      icon:Code,
+      experience:"Software Architect",
       description:
-        "Guides startups in product development, cloud technologies, and scalable software systems.",
+      "Guides startups with product development, cloud solutions and scalable technology."
     },
+
+
     {
-      name: "Neha Kapoor",
-      role: "Growth Strategist",
-      icon: TrendingUp,
-      experience: "Growth & Marketing",
+      name:"Neha Kapoor",
+      role:"Growth Strategist",
+      icon:TrendingUp,
+      experience:"Growth & Marketing",
       description:
-        "Expert in branding, digital marketing, customer acquisition, and startup growth strategies.",
+      "Supports startups with branding, marketing and customer acquisition."
     },
+
+
     {
-      name: "Vikram Singh",
-      role: "Business Consultant",
-      icon: Globe,
-      experience: "Global Business Advisor",
+      name:"Vikram Singh",
+      role:"Business Consultant",
+      icon:Globe,
+      experience:"Global Business Advisor",
       description:
-        "Supports startups with business planning, operations, partnerships, and international expansion.",
+      "Helps startups with operations, partnerships and expansion strategies."
     },
+
+
     {
-      name: "Anjali Rao",
-      role: "Leadership Coach",
-      icon: Briefcase,
-      experience: "Leadership Development",
+      name:"Anjali Rao",
+      role:"Leadership Coach",
+      icon:Briefcase,
+      experience:"Leadership Development",
       description:
-        "Mentors founders in leadership, team building, communication, and startup management.",
-    },
+      "Mentors founders in leadership, communication and team building."
+    }
+
   ];
 
+
+
   const displayMentors = limit
-    ? mentors.slice(0, limit)
-    : mentors;
+  ? mentors.slice(0,limit)
+  : mentors;
 
-  return (
-    <section className="mentor-section">
 
-      <div className="mentor-container">
 
-        <div className="mentor-heading">
+return (
 
-          <p>OUR MENTORS</p>
+<section className="mentor-section">
 
-          <h2>
-            Learn From
-            <span> Industry Leaders</span>
-          </h2>
 
-        </div>
+<div className="mentor-cards-container">
 
-        <div className="mentor-grid">
 
-          {displayMentors.map((mentor, index) => {
+<div className="mentor-grid">
 
-            const Icon = mentor.icon;
 
-            return (
+{
+displayMentors.map((mentor,index)=>{
 
-              <motion.div
-                key={mentor.name}
-                className="mentor-card"
-                initial={{ opacity: 0, y: 35 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-              >
 
-                <div className="mentor-avatar">
-                  {mentor.name.charAt(0)}
-                </div>
+const Icon = mentor.icon;
 
-                <h3>{mentor.name}</h3>
 
-                <h4>{mentor.role}</h4>
+return(
 
-                <div className="mentor-experience">
-                  <Icon size={18} />
-                  <span>{mentor.experience}</span>
-                </div>
+<motion.div
 
-                <p>{mentor.description}</p>
+key={mentor.name}
 
-                {showButton && (
+className="mentor-card"
 
-                  <button>
 
-                    Linkedin Profile
+initial={{
+opacity:0,
+y:30
+}}
 
-                    <ArrowRight size={18} />
+whileInView={{
+opacity:1,
+y:0
+}}
 
-                  </button>
+viewport={{
+once:true
+}}
 
-                )}
+transition={{
+duration:0.5,
+delay:index*0.1
+}}
 
-              </motion.div>
+>
 
-            );
 
-          })}
+<div className="mentor-avatar">
 
-        </div>
+{mentor.name.charAt(0)}
 
-      </div>
+</div>
 
-    </section>
-  );
+
+
+<h3>
+{mentor.name}
+</h3>
+
+
+<h4>
+{mentor.role}
+</h4>
+
+
+
+<div className="mentor-experience">
+
+<Icon size={18}/>
+
+<span>
+{mentor.experience}
+</span>
+
+</div>
+
+
+
+<p>
+{mentor.description}
+</p>
+
+
+
+</motion.div>
+
+
+)
+
+
+})
 }
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+);
+
+
+}
+
 
 export default MentorCards;

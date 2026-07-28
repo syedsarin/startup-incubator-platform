@@ -1,12 +1,29 @@
 import "./ServicesHero.css";
 import { motion } from "framer-motion";
-import { Briefcase } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
+import servicesHeroImage from "../../assets/images/services/services-hero.png";
+
 
 function ServicesHero() {
 
+
   return (
 
-    <section className="services-hero">
+    <section
+
+      className="services-hero"
+
+      style={{
+
+        backgroundImage: `linear-gradient(
+          rgba(15,23,42,0.65),
+          rgba(15,23,42,0.65)
+        ), url(${servicesHeroImage})`
+
+      }}
+
+    >
+
 
       <div className="services-container">
 
@@ -32,9 +49,10 @@ function ServicesHero() {
         >
 
 
+
           <div className="services-badge">
 
-            <Briefcase size={18}/>
+            <BriefcaseBusiness size={18}/>
 
             Startup Services
 
@@ -42,25 +60,28 @@ function ServicesHero() {
 
 
 
+
           <h1>
 
-            Complete Support For
+            Complete Support To
 
             <span>
-              Growing Startups
+              Grow Your Startup
             </span>
 
           </h1>
 
 
 
+
           <p>
 
-            We provide startups with the right resources,
-            mentorship, technology support, and business
-            guidance to help them grow faster.
+            We provide startups with expert guidance,
+            technology support, business solutions,
+            and resources needed to build scalable companies.
 
           </p>
+
 
 
         </motion.div>
@@ -74,5 +95,6 @@ function ServicesHero() {
   );
 
 }
+
 
 export default ServicesHero;

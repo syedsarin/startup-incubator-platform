@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 import {
   Target,
   Rocket,
@@ -7,33 +8,54 @@ import {
   Trophy,
   BriefcaseBusiness,
   MessageCircle,
-  CheckCircle,
 } from "lucide-react";
 
 import "./AboutContent.css";
 
+
 function AboutContent() {
 
+
   const cards = [
+
     {
       icon: Rocket,
-      title: "Our Mission",
-      description:
-        "We help entrepreneurs turn innovative ideas into successful businesses through mentorship, resources, and startup support."
+      title: "Who We Are",
+      points: [
+        "Supporting startups, innovators, and entrepreneurs.",
+        "Helping founders build scalable businesses.",
+        "Providing mentorship, resources, and guidance.",
+        "Connecting startups with investors and opportunities.",
+        "Accelerating innovation and startup growth."
+      ]
     },
+
     {
       icon: Target,
-      title: "Our Vision",
-      description:
-        "To create a strong startup ecosystem where founders, mentors, and investors collaborate to build impactful solutions."
+      title: "Vision",
+      points: [
+        "Creating a world-class innovation ecosystem for entrepreneurs.",
+        "Empowering founders to build impactful and scalable companies.",
+        "Providing the right resources, mentorship, and opportunities.",
+        "Supporting startups to compete in global markets.",
+        "Becoming a trusted platform for innovation and entrepreneurship."
+      ]
     },
+
     {
       icon: Lightbulb,
-      title: "Our Values",
-      description:
-        "We believe in innovation, collaboration, continuous learning, and empowering entrepreneurs for long-term growth."
+      title: "Mission",
+      points: [
+        "Support innovative startups.",
+        "Promote entrepreneurship and founder growth.",
+        "Connect founders with mentors and investors.",
+        "Foster innovation and technology development.",
+        "Build sustainable and scalable businesses."
+      ]
     }
+
   ];
+
 
 
   const features = [
@@ -43,73 +65,91 @@ function AboutContent() {
     "Strong Entrepreneur Community"
   ];
 
+
+
   const successStories = [
-  "Startup Journey",
-  "Funding Raised",
-  "Awards & Recognition",
-  "Customer Growth",
-  "Revenue Milestones",
-  "Founder Testimonials"
-];
+    "Startup Journey",
+    "Funding Raised",
+    "Awards & Recognition",
+    "Customer Growth",
+    "Revenue Milestones",
+    "Founder Testimonials"
+  ];
 
-const community = [
-  "Discussion Forums",
-  "Slack & Discord Community",
-  "Founder Networking",
-  "Startup Meetups",
-  "Alumni Network",
-  "Knowledge Sharing"
-];
 
-const careers = [
-  "Startup Jobs",
-  "Internships",
-  "Founder Opportunities",
-  "Volunteer Programs",
-  "Career Guidance",
-  "Hiring Network"
-];
+
+  const community = [
+    "Discussion Forums",
+    "Slack & Discord Community",
+    "Founder Networking",
+    "Startup Meetups",
+    "Alumni Network",
+    "Knowledge Sharing"
+  ];
+
+
+
+  const careers = [
+    "Startup Jobs",
+    "Internships",
+    "Founder Opportunities",
+    "Volunteer Programs",
+    "Career Guidance",
+    "Hiring Network"
+  ];
+
+
 
   return (
+
     <>
 
-      {/* About Story */}
 
-      
+      {/* About Cards */}
 
-      {/* Mission Vision Values */}
-
-      <section className="content-section light">
+      <section className="content-section">
 
         <div className="content-container">
 
+
           <div className="content-cards">
+
 
             {cards.map((card,index)=>{
 
+
               const Icon = card.icon;
+
 
               return (
 
                 <motion.div
+
                   key={card.title}
+
+                  className="content-card"
+
                   initial={{
                     opacity:0,
                     y:30
                   }}
+
                   whileInView={{
                     opacity:1,
                     y:0
                   }}
+
                   viewport={{
                     once:true
                   }}
+
                   transition={{
-                    duration:0.5,
-                    delay:index*0.1
+                    duration:.5,
+                    delay:index*.1
                   }}
-                  className="content-card"
+
                 >
+
 
                   <div className="content-icon">
 
@@ -118,23 +158,36 @@ const careers = [
                   </div>
 
 
+
                   <h3>
                     {card.title}
                   </h3>
 
 
-                  <p>
-                    {card.description}
-                  </p>
+
+                  <ul className="card-points">
+
+                    {card.points.map((point)=>(
+
+                      <li key={point}>
+                        {point}
+                      </li>
+
+                    ))}
+
+                  </ul>
 
 
                 </motion.div>
 
-              );
+              )
+
 
             })}
 
+
           </div>
+
 
         </div>
 
@@ -143,16 +196,18 @@ const careers = [
 
 
 
+
       {/* Why Choose Us */}
 
-      <section className="content-section">
+
+      <section className="content-section light">
+
 
         <div className="content-container">
 
 
           <div className="content-heading">
 
-            
             <h2>
               Why Choose Us
             </h2>
@@ -163,156 +218,231 @@ const careers = [
 
           <div className="feature-grid">
 
-            {features.map((feature)=>(
+
+            {features.map((item)=>(
 
               <div
-                key={feature}
                 className="feature-card"
+                key={item}
               >
 
                 <Users size={32}/>
 
-                {feature}
+                <span>
+                  {item}
+                </span>
 
               </div>
 
             ))}
+
 
           </div>
 
 
         </div>
 
+
       </section>
 
-{/* Success Stories */}
 
-<section className="content-section light">
 
-  <div className="content-container">
 
-    <div className="content-heading">
 
-    
-      <h2>Success Stories</h2>
+      {/* Success Stories */}
 
-      <span>
-        We proudly showcase the inspiring journeys of startups that have
-        grown through our incubation ecosystem.
-      </span>
 
-    </div>
+      <section className="content-section">
 
-    <div className="feature-grid">
 
-      {successStories.map((item) => (
+        <div className="content-container">
 
-        <div
-          key={item}
-          className="feature-card"
-        >
-          <Trophy size={30} />
 
-          {item}
+          <div className="content-heading">
+
+            <h2>
+              Success Stories
+            </h2>
+
+
+            <span>
+              We proudly showcase the inspiring journeys of startups that have grown through our incubation ecosystem.
+            </span>
+
+          </div>
+
+
+
+
+          <div className="feature-grid">
+
+
+            {successStories.map((item)=>(
+
+              <div
+                className="feature-card"
+                key={item}
+              >
+
+                <Trophy size={30}/>
+
+                <span>
+                  {item}
+                </span>
+
+              </div>
+
+            ))}
+
+
+          </div>
+
 
         </div>
 
-      ))}
 
-    </div>
-
-  </div>
-
-</section>
+      </section>
 
 
 
-{/* Community */}
-
-<section className="content-section">
-
-  <div className="content-container">
-
-    <div className="content-heading">
-
-      <h2>Community</h2>
-
-      <span>
-        Connect with entrepreneurs, mentors, investors, and innovators
-        through an active startup community.
-      </span>
-
-    </div>
-
-    <div className="feature-grid">
-
-      {community.map((item) => (
-
-        <div
-          key={item}
-          className="feature-card"
-        >
-
-          <MessageCircle size={30} />
-
-          {item}
-
-        </div>
-
-      ))}
-
-    </div>
-
-  </div>
-
-</section>
 
 
 
-{/* Career Center */}
+      {/* Community */}
 
-<section className="content-section light">
 
-  <div className="content-container">
+      <section className="content-section light">
 
-    <div className="content-heading">
 
-      <p>Career Center</p>
+        <div className="content-container">
 
-      <h2>Grow Your Career In The Startup Ecosystem</h2>
 
-      <span>
-        Explore startup jobs, internships, founder opportunities,
-        and volunteer programs.
-      </span>
+          <div className="content-heading">
 
-    </div>
+            <h2>
+              Community
+            </h2>
 
-    <div className="feature-grid">
 
-      {careers.map((item) => (
+            <span>
+              Connect with entrepreneurs, mentors, investors, and innovators through an active startup community.
+            </span>
 
-        <div
-          key={item}
-          className="feature-card"
-        >
 
-          <BriefcaseBusiness size={30} />
+          </div>
 
-          {item}
+
+
+          <div className="feature-grid">
+
+
+            {community.map((item)=>(
+
+              <div
+                className="feature-card"
+                key={item}
+              >
+
+                <MessageCircle size={30}/>
+
+                <span>
+                  {item}
+                </span>
+
+
+              </div>
+
+            ))}
+
+
+          </div>
+
 
         </div>
 
-      ))}
 
-    </div>
+      </section>
 
-  </div>
 
-</section>
+
+
+
+
+
+      {/* Career Center */}
+
+
+      <section className="content-section">
+
+
+        <div className="content-container">
+
+
+          <div className="content-heading">
+
+
+            <p>
+              Career Center
+            </p>
+
+
+            <h2>
+              Grow Your Career In The Startup Ecosystem
+            </h2>
+
+
+            <span>
+              Explore startup jobs, internships, founder opportunities, and volunteer programs.
+            </span>
+
+
+          </div>
+
+
+
+
+          <div className="feature-grid">
+
+
+            {careers.map((item)=>(
+
+              <div
+
+                className="feature-card"
+
+                key={item}
+
+              >
+
+                <BriefcaseBusiness size={30}/>
+
+
+                <span>
+                  {item}
+                </span>
+
+
+              </div>
+
+            ))}
+
+
+          </div>
+
+
+
+        </div>
+
+
+      </section>
+
+
 
     </>
+
   );
+
 }
+
 
 export default AboutContent;

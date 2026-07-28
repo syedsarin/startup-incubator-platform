@@ -1,17 +1,48 @@
 @import "tailwindcss";
 
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+  margin:0;
+
+  padding:0;
+
+  box-sizing:border-box;
+
 }
+
 
 html {
-  scroll-behavior: smooth;
+
+  scroll-behavior:smooth;
+
 }
 
+
 body {
-  background: #f8fafc;
-  color: #111827;
-  font-family: Inter, system-ui, sans-serif;
+
+  background:#f8fafc;
+
+  color:#111827;
+
+  font-family:Inter, system-ui, sans-serif;
+
+}
+
+
+img {
+
+  max-width:100%;
+
+  height:auto;
+
+  display:block;
+
+}
+
+
+a {
+
+  text-decoration:none;
+
 }

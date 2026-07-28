@@ -1,5 +1,7 @@
 import "./InvestorsOverview.css";
+import investorsImage from "../../assets/images/investors/investors-banner.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   HandCoins,
   TrendingUp,
@@ -109,28 +111,70 @@ function InvestorsOverview() {
 
   return (
     <>
+      {/* Hero */}
+
+      <section className="investor-overview-hero">
+        <div className="investor-overview-container">
+          <motion.div
+            className="investor-overview-content"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="overview-tag">
+              Investment Network
+            </p>
+
+            <h2>
+              Invest In The Next Generation Of
+              <span> Innovative Startups</span>
+            </h2>
+
+            <p>
+              Connect with carefully selected startups, discover high-growth
+              investment opportunities, collaborate with visionary founders,
+              and create long-term value through our trusted startup ecosystem.
+            </p>
+
+        <Link
+  to="/register"
+  className="investor-btn"
+>
+  Become an Investor
+</Link>
+          </motion.div>
+
+          <motion.div
+            className="investor-overview-image"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <img
+              src={investorsImage}
+              alt="Investors"
+            />
+          </motion.div>
+        </div>
+      </section>
+
       {/* Investor Categories */}
 
       <section className="investor-section">
-
         <div className="investor-container">
 
           <div className="section-heading">
-
             <p>Investment Opportunities</p>
-
             <h2>Choose Your Investment Path</h2>
-
           </div>
 
           <div className="investor-grid">
-
             {investorTypes.map((item, index) => {
-
               const Icon = item.icon;
 
               return (
-
                 <motion.div
                   key={item.title}
                   className="investor-card"
@@ -139,148 +183,99 @@ function InvestorsOverview() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                 >
-
                   <Icon size={34} />
-
                   <h3>{item.title}</h3>
-
                   <p>{item.description}</p>
-
                 </motion.div>
-
               );
-
             })}
-
           </div>
 
         </div>
-
       </section>
 
       {/* Benefits */}
 
       <section className="investor-section light">
-
         <div className="investor-container">
 
           <div className="section-heading">
-
             <p>Why Invest With Us</p>
-
             <h2>Everything Investors Need</h2>
-
           </div>
 
           <div className="benefit-grid">
-
             {benefits.map((item) => {
-
               const Icon = item.icon;
 
               return (
-
                 <div
                   key={item.text}
                   className="benefit-card"
                 >
-
                   <Icon size={28} />
-
                   {item.text}
-
                 </div>
-
               );
-
             })}
-
           </div>
 
         </div>
-
       </section>
 
       {/* Investment Process */}
 
       <section className="investor-section">
-
         <div className="investor-container">
 
           <div className="section-heading">
-
             <p>Investment Journey</p>
-
             <h2>Simple 4 Step Process</h2>
-
           </div>
 
           <div className="process-grid">
-
             {process.map((item) => {
-
               const Icon = item.icon;
 
               return (
-
                 <div
                   key={item.title}
                   className="process-card"
                 >
-
                   <Icon size={34} />
-
                   <h3>{item.title}</h3>
-
                 </div>
-
               );
-
             })}
-
           </div>
 
         </div>
-
       </section>
 
       {/* Statistics */}
 
       <section className="investor-section light">
-
         <div className="investor-container">
 
           <div className="stats-grid">
-
             {stats.map((item) => {
-
               const Icon = item.icon;
 
               return (
-
                 <div
                   key={item.label}
                   className="stat-card"
                 >
-
                   <Icon size={34} />
-
                   <h2>{item.number}</h2>
-
                   <p>{item.label}</p>
-
                 </div>
-
               );
-
             })}
-
           </div>
 
         </div>
-
       </section>
-
     </>
   );
 }

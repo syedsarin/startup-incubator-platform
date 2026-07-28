@@ -1,95 +1,112 @@
 import "./EventsSection.css";
-import "../../styles/SectionCards.css";
-
-const events = [
-  {
-    title: "Startup Networking Meet",
-    date: "15 August 2026",
-    description:
-      "Connect with founders, investors and startup enthusiasts."
-  },
-  {
-    title: "Founder Workshop",
-    date: "22 August 2026",
-    description:
-      "Learn startup strategy from experienced entrepreneurs."
-  },
-  {
-    title: "Investor Meetup",
-    date: "05 September 2026",
-    description:
-      "Meet investors and explore funding opportunities."
-  },
-  {
-    title: "Innovation Summit",
-    date: "20 September 2026",
-    description:
-      "A platform to showcase innovative startup ideas."
-  }
-];
+import { Link } from "react-router-dom";
+import { CheckCircle } from "lucide-react";
+import eventsImage from "../../assets/images/events/events-startup.png";
 
 
-const EventsSection = () => {
+function EventsSection() {
+
+
+  const eventPoints = [
+    "Startup Networking Meetups",
+    "Founder Workshops",
+    "Investor Connect Events"
+  ];
+
 
   return (
 
     <section className="landing-events">
 
-      <div className="events-container">
+
+      <div className="landing-events-container">
 
 
-        <div className="events-header">
 
-          <h2>
-            Upcoming Events
-          </h2>
+        {/* Left Content */}
 
-          <p>
-            Join startup events, workshops and networking sessions.
+        <div className="landing-events-content">
+
+
+          <p className="events-tag">
+            Events
           </p>
 
+
+
+          <h2>
+            Connect, Learn & Grow Through Startup Events
+          </h2>
+
+
+
+          <p className="events-description">
+
+            Join founder meetups, workshops, networking sessions,
+            and startup events designed to connect entrepreneurs,
+            mentors, and investors.
+
+          </p>
+
+
+
+
+          <ul>
+
+            {eventPoints.map((item,index)=>(
+
+              <li key={index}>
+
+                <CheckCircle size={20}/>
+
+                {item}
+
+              </li>
+
+            ))}
+
+          </ul>
+
+
+
+
+
+          <Link
+
+            to="/events"
+
+            className="events-btn"
+
+          >
+
+            View All Events
+
+          </Link>
+
+
+
         </div>
 
 
 
-        <div className="events-cards">
 
 
-          {
-            events.map((event,index)=>(
+        {/* Right Image */}
 
-              <div
-                className="event-card"
-                key={index}
-              >
-
-                <span className="event-date">
-                  {event.date}
-                </span>
+        <div className="landing-events-image">
 
 
-                <h3>
-                  {event.title}
-                </h3>
+          <img
 
+            src={eventsImage}
 
-                <p>
-                  {event.description}
-                </p>
+            alt="Startup founders attending business events"
 
-
-                <button>
-                  View Details
-                </button>
-
-
-              </div>
-
-            ))
-          }
+          />
 
 
         </div>
+
 
 
       </div>
@@ -99,7 +116,7 @@ const EventsSection = () => {
 
   );
 
-};
+}
 
 
 export default EventsSection;

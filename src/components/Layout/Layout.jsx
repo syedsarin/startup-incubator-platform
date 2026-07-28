@@ -5,15 +5,13 @@ import Footer from "../Footer/Footer";
 function Layout() {
   return (
     <>
-
       <Navbar />
 
-      <main className="bg-slate-50">
+      <main>
         <Outlet />
       </main>
 
       <Footer />
-
     </>
   );
 }

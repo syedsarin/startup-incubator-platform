@@ -1,101 +1,110 @@
 .landing-events {
 
-  padding:70px 40px;
+  width:100%;
+
+  padding:80px 40px;
+
+  background:#ffffff;
 
 }
 
 
 
-.events-container {
+.landing-events-container {
 
   max-width:1200px;
 
   margin:auto;
 
-}
-
-
-
-/* Header */
-
-.events-header {
-
-  text-align:center;
-
-  margin-bottom:40px;
-
-}
-
-
-.events-header h2 {
-
-  font-size:40px;
-
-  font-weight:700;
-
-  color:#111827;
-
-}
-
-
-.events-header p {
-
-  margin-top:12px;
-
-  color:#64748b;
-
-}
-
-
-
-/* Cards */
-
-.events-cards {
-
   display:grid;
 
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:1fr 1fr;
 
-  gap:24px;
+  gap:60px;
 
-}
-
-
-
-.event-card {
-
-  background:white;
-
-  padding:30px;
-
-  border-radius:20px;
-
-  min-height:250px;
-
-
-  box-shadow:
-  0 10px 30px rgba(0,0,0,0.08);
-
-
-  transition:0.3s ease;
+  align-items:center;
 
 }
 
 
 
-.event-card:hover {
+/* Content */
 
-  transform:translateY(-8px);
+.events-tag {
 
-}
-
-
-
-.event-date {
+  color:#2563eb;
 
   font-size:14px;
 
-  color:#2563eb;
+  font-weight:700;
+
+  text-transform:uppercase;
+
+  letter-spacing:2px;
+
+}
+
+
+
+.landing-events-content h2 {
+
+  margin-top:18px;
+
+  font-size:42px;
+
+  font-weight:800;
+
+  color:#0f172a;
+
+  line-height:1.2;
+
+}
+
+
+
+.events-description {
+
+  margin-top:20px;
+
+  color:#64748b;
+
+  font-size:17px;
+
+  line-height:1.7;
+
+}
+
+
+
+.landing-events-content ul {
+
+  margin-top:25px;
+
+  padding-left:20px;
+
+  color:#334155;
+
+  line-height:2;
+
+}
+
+
+
+.events-btn {
+
+  display:inline-flex;
+
+  margin-top:25px;
+
+  padding:12px 26px;
+
+  border-radius:10px;
+
+  background:#2563eb;
+
+  color:white;
+
+  text-decoration:none;
 
   font-weight:600;
 
@@ -103,53 +112,17 @@
 
 
 
-.event-card h3 {
+/* Image */
 
-  margin-top:15px;
+.landing-events-image img {
 
-  font-size:21px;
+  width:100%;
 
-  color:#111827;
+  height:420px;
 
-}
+  object-fit:cover;
 
-
-
-.event-card p {
-
-  margin-top:12px;
-
-  color:#64748b;
-
-  line-height:1.6;
-
-}
-
-
-
-.event-card button {
-
-  margin-top:20px;
-
-  padding:10px 18px;
-
-  border:none;
-
-  border-radius:10px;
-
-  background:#111827;
-
-  color:white;
-
-  cursor:pointer;
-
-}
-
-
-
-.event-card button:hover {
-
-  opacity:0.9;
+  border-radius:28px;
 
 }
 
@@ -157,38 +130,21 @@
 
 /* Responsive */
 
-@media(max-width:1000px){
-
-.events-cards{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
+@media(max-width:900px){
 
 
+  .landing-events-container {
 
-@media(max-width:600px){
+    grid-template-columns:1fr;
 
-.landing-events{
-
-padding:40px 20px;
-
-}
+  }
 
 
-.events-cards{
+  .landing-events-content h2 {
 
-grid-template-columns:1fr;
+    font-size:34px;
 
-}
+  }
 
-
-.events-header h2{
-
-font-size:32px;
-
-}
 
 }

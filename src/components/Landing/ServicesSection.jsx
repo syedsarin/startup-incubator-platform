@@ -1,92 +1,129 @@
 import "./ServicesSection.css";
-
-
-const services = [
-  {
-    title: "Startup Mentorship",
-    description:
-  "• One-on-one guidance from experts.\n\n" +
-  "• Learn from experienced entrepreneurs.\n\n" +
-  "• Receive practical business advice.\n\n" +
-  "• Improve decision-making skills.\n\n" +
-  "• Accelerate startup growth."
-  },
-  {
-    title: "Business Devevelopement",
-    description:
-  "• Build sustainable business models.\n\n" +
-  "• Develop growth strategies.\n\n" +
-  "• Identify market opportunities.\n\n" +
-  "• Improve customer acquisition.\n\n" +
-  "• Scale business successfully."
-  },
-  {
-    title: "Product Development",
-    description:
-  "• Develop web and mobile applications.\n\n" +
-  "• Build AI and SaaS products.\n\n" +
-  "• Create scalable cloud solutions.\n\n" +
-  "• Improve product quality.\n\n" +
-  "• Deliver market-ready products."
-  },
-  {
-    title: "Technology Counsulting",
-    description:
-  "• AI and cloud consulting.\n\n" +
-  "• Cybersecurity and DevOps support.\n\n" +
-  "• Software architecture guidance.\n\n" +
-  "• Optimize technical solutions.\n\n" +
-  "• Enable digital transformation."
-  }
-];
-
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import servicesImage from "../../assets/images/services/services-banner.png";
 
 const ServicesSection = () => {
+
   return (
+
     <section className="landing-services">
 
-      <div className="services-container">
 
-        <div className="services-header">
+      <div className="landing-services-container">
 
-          <h2>
+
+        {/* Left Content */}
+
+        <motion.div
+
+          className="services-content"
+
+          initial={{
+            opacity:0,
+            x:-50
+          }}
+
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
+
+          transition={{
+            duration:0.6
+          }}
+
+          viewport={{
+            once:true
+          }}
+
+        >
+
+
+          <p className="service-tag">
             Our Services
-          </h2>
-
-          <p>
-            Everything your startup needs to grow, build and scale.
           </p>
 
-        </div>
 
 
-        <div className="services-cards">
+          <h2>
+            Complete Startup Support To Build And Scale Successfully
+          </h2>
 
-          {services.map((service, index) => (
 
-            <div 
-              className="service-card"
-              key={index}
-            >
 
-              <h3>
-                {service.title}
-              </h3>
+          <p className="service-description">
 
-              <p>
-                {service.description}
-              </p>
+            We provide startups with mentorship, business development,
+            product development, technology consulting, and strategic
+            support to transform ideas into successful businesses.
 
-            </div>
+          </p>
 
-          ))}
 
-        </div>
+
+          <Link
+            to="/services"
+            className="service-btn"
+          >
+
+            Explore Services
+
+          </Link>
+
+
+        </motion.div>
+
+
+
+
+        {/* Right Image */}
+
+        <motion.div
+
+          className="services-image"
+
+          initial={{
+            opacity:0,
+            x:50
+          }}
+
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
+
+          transition={{
+            duration:0.6
+          }}
+
+          viewport={{
+            once:true
+          }}
+
+        >
+
+
+          <img
+
+            src={servicesImage}
+
+            alt="Startup Services"
+
+          />
+
+
+        </motion.div>
+
+
 
       </div>
 
+
     </section>
+
   );
+
 };
 
 

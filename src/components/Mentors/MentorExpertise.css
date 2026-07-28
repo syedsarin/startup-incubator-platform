@@ -1,132 +1,156 @@
 .expertise-section{
-    width:100%;
-    padding:100px 0;
-    background:#f8fafc;
+
+padding:80px 0;
+background:#f8fafc;
+
 }
+
 
 .expertise-container{
-    width:100%;
-    max-width:1280px;
-    margin:auto;
-    padding:0 24px;
+
+max-width:1280px;
+margin:auto;
+padding:0 24px;
+
 }
+
+
 
 .expertise-heading{
-    max-width:750px;
-    margin:auto;
-    text-align:center;
+
+text-align:center;
+margin-bottom:50px;
+
 }
+
 
 .expertise-heading p{
-    color:#2563eb;
-    font-size:14px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:3px;
+
+color:#2563eb;
+font-weight:700;
+
 }
+
 
 .expertise-heading h2{
-    margin-top:20px;
-    font-size:48px;
-    font-weight:800;
-    color:#0f172a;
-    line-height:1.2;
+
+margin-top:15px;
+font-size:42px;
+font-weight:800;
+color:#0f172a;
+
 }
 
-.expertise-heading h2 span{
-    color:#2563eb;
+
+.expertise-heading span{
+
+display:block;
+color:#2563eb;
+
 }
+
+
 
 .expertise-grid{
-    margin-top:70px;
 
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:28px;
+
 }
+
+
 
 .expertise-card{
-    background:#ffffff;
 
-    padding:35px 30px;
+background:white;
 
-    border-radius:22px;
+padding:30px;
 
-    border:1px solid #e2e8f0;
+border-radius:24px;
 
-    text-align:center;
+border:1px solid #e2e8f0;
 
-    transition:.35s;
+transition:.3s;
 
-    box-shadow:0 10px 30px rgba(15,23,42,.05);
 }
+
+
 
 .expertise-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 40px rgba(15,23,42,.10);
+
+transform:translateY(-8px);
+
 }
+
+
 
 .expertise-icon{
-    width:70px;
-    height:70px;
 
-    margin:auto;
+width:60px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+height:60px;
 
-    border-radius:18px;
+display:flex;
 
-    background:#dbeafe;
+align-items:center;
 
-    color:#2563eb;
+justify-content:center;
+
+border-radius:16px;
+
+background:#dbeafe;
+
+color:#2563eb;
+
 }
+
+
 
 .expertise-card h3{
-    margin-top:24px;
 
-    font-size:24px;
+margin-top:20px;
 
-    font-weight:700;
+font-size:22px;
 
-    color:#0f172a;
+font-weight:700;
+
 }
+
+
 
 .expertise-card p{
-    margin-top:16px;
 
-    font-size:16px;
+margin-top:12px;
 
-    line-height:1.8;
+color:#64748b;
 
-    color:#64748b;
+line-height:1.6;
+
 }
 
-@media(max-width:1024px){
+
+
+@media(max-width:1000px){
 
 .expertise-grid{
-    grid-template-columns:repeat(2,1fr);
-}
+
+grid-template-columns:repeat(2,1fr);
 
 }
 
-@media(max-width:768px){
-
-.expertise-section{
-    padding:80px 0;
 }
 
-.expertise-heading h2{
-    font-size:38px;
-}
+
+
+@media(max-width:700px){
 
 .expertise-grid{
-    grid-template-columns:1fr;
-}
 
-.expertise-card{
-    padding:30px 24px;
+grid-template-columns:1fr;
+
 }
 
 }

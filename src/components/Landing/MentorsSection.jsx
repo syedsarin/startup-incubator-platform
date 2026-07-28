@@ -1,28 +1,7 @@
 import "./MentorsSection.css";
-
-
-const mentors = [
-  {
-    name: "Sarah Johnson",
-    role: "Startup Advisor",
-    expertise: "Business Strategy"
-  },
-  {
-    name: "Michael Smith",
-    role: "Technology Mentor",
-    expertise: "Product Development"
-  },
-  {
-    name: "David Wilson",
-    role: "Investment Mentor",
-    expertise: "Funding & Growth"
-  },
-  {
-    name: "Emma Brown",
-    role: "Marketing Expert",
-    expertise: "Brand Building"
-  }
-];
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import mentorsImage from "../../assets/images/mentors/mentors-banner.png";
 
 
 const MentorsSection = () => {
@@ -31,61 +10,122 @@ const MentorsSection = () => {
 
     <section className="landing-mentors">
 
-      <div className="mentors-container">
+
+      <div className="landing-mentors-container">
 
 
-        <div className="mentors-header">
+        {/* Left Content */}
 
-          <h2>
-            Our Mentors
-          </h2>
+        <motion.div
 
-          <p>
-            Learn from experienced professionals and industry leaders.
+          className="landing-mentors-content"
+
+          initial={{
+            opacity: 0,
+            x: -50
+          }}
+
+          whileInView={{
+            opacity: 1,
+            x: 0
+          }}
+
+          transition={{
+            duration:0.6
+          }}
+
+          viewport={{
+            once:true
+          }}
+
+        >
+
+
+          <p className="mentor-tag">
+
+            Expert Mentorship
+
           </p>
 
-        </div>
+
+
+          <h2>
+
+            Learn From Industry Experts And Startup Leaders
+
+          </h2>
 
 
 
-        <div className="mentors-cards">
+          <p className="mentor-description">
+
+            Get guidance from experienced mentors who help startups
+            with strategy, technology, product development, marketing,
+            fundraising, and business growth.
+
+          </p>
 
 
-          {
-            mentors.map((mentor,index)=>(
 
-              <div
-                className="mentor-card"
-                key={index}
-              >
+          <Link
 
-                <div className="mentor-avatar">
-                  {mentor.name.charAt(0)}
-                </div>
+            to="/mentors"
 
+            className="mentor-btn"
 
-                <h3>
-                  {mentor.name}
-                </h3>
+          >
+
+            Explore Mentors
+
+          </Link>
 
 
-                <span>
-                  {mentor.role}
-                </span>
+
+        </motion.div>
 
 
-                <p>
-                  {mentor.expertise}
-                </p>
 
 
-              </div>
 
-            ))
-          }
+        {/* Right Image */}
 
 
-        </div>
+        <motion.div
+
+          className="landing-mentors-image"
+
+          initial={{
+            opacity:0,
+            x:50
+          }}
+
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
+
+          transition={{
+            duration:0.6
+          }}
+
+          viewport={{
+            once:true
+          }}
+
+        >
+
+
+          <img
+
+            src={mentorsImage}
+
+            alt="Startup Mentors"
+
+          />
+
+
+        </motion.div>
+
 
 
       </div>

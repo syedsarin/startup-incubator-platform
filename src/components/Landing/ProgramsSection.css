@@ -1,82 +1,100 @@
 .landing-programs {
 
-  padding:70px 40px;
+  width:100%;
+  padding:80px 40px;
 
 }
 
 
-
-.programs-container {
+.landing-programs-container {
 
   max-width:1200px;
 
   margin:auto;
 
-}
+  display:grid;
 
+  grid-template-columns:1fr 1fr;
 
+  align-items:center;
 
-/* Header */
-
-.programs-header {
-
-  text-align:center;
-
-  margin-bottom:40px;
+  gap:70px;
 
 }
 
 
 
-.programs-header h2 {
+/* Content */
 
-  font-size:40px;
+.landing-programs-content {
+
+  max-width:550px;
+
+}
+
+
+
+.program-tag {
+
+  color:#2563eb;
 
   font-weight:700;
 
-  color:#111827;
+  margin-bottom:15px;
 
 }
 
 
 
-.programs-header p {
+.landing-programs-content h2 {
 
-  margin-top:12px;
+  font-size:42px;
+
+  line-height:1.2;
+
+  font-weight:800;
+
+  color:#111827;
+
+  margin-bottom:20px;
+
+}
+
+
+
+.program-description {
+
+  font-size:18px;
 
   color:#64748b;
 
-  line-height:1.6;
+  line-height:1.7;
+
+  margin-bottom:30px;
 
 }
 
 
 
-/* Cards */
+.program-btn {
 
-.programs-cards {
+  display:inline-flex;
 
-  display:grid;
+  align-items:center;
 
-  grid-template-columns:repeat(4,1fr);
+  justify-content:center;
 
-  gap:24px;
+  padding:14px 32px;
 
-}
+  border-radius:10px;
 
+  background:#2563eb;
 
+  color:white;
 
-.program-card {
+  text-decoration:none;
 
-  background:white;
-
-  padding:30px;
-
-  min-height:280px;
-
-  border-radius:20px;
-
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  font-weight:600;
 
   transition:.3s ease;
 
@@ -84,79 +102,85 @@
 
 
 
-.program-card:hover {
+.program-btn:hover {
 
-  transform:translateY(-8px);
+  transform:translateY(-3px);
 
-}
-
-
-
-.program-card h3 {
-
-  font-size:21px;
-
-  margin-bottom:18px;
-
-  color:#111827;
+  background:#1d4ed8;
 
 }
 
 
 
-/* Description */
+/* Image */
 
-.program-card p {
+.landing-programs-image {
 
-  color:#64748b;
+  width:100%;
 
-  font-size:14px;
+  display:flex;
 
-  line-height:1.8;
+  justify-content:center;
 
-  white-space:pre-line;
-
-}
-
-
-
-/* Responsive */
-
-@media(max-width:1000px){
-
-  .programs-cards{
-
-    grid-template-columns:repeat(2,1fr);
-
-  }
+  align-items:center;
 
 }
 
 
 
-@media(max-width:600px){
+.landing-programs-image img {
+
+  width:100%;
+
+  max-width:550px;
+
+  height:auto;
+
+  border-radius:24px;
+
+  object-fit:cover;
+
+  display:block;
+
+}
+
+
+
+@media(max-width:768px){
 
   .landing-programs{
 
-    padding:40px 20px;
+    padding:50px 20px;
 
   }
 
-  .programs-cards{
+
+  .landing-programs-container{
 
     grid-template-columns:1fr;
 
+    gap:40px;
+
   }
 
-  .programs-header h2{
+
+  .landing-programs-image{
+
+    order:-1;
+
+  }
+
+
+  .landing-programs-content h2{
 
     font-size:32px;
 
   }
 
-  .program-card{
 
-    min-height:auto;
+  .program-description{
+
+    font-size:16px;
 
   }
 

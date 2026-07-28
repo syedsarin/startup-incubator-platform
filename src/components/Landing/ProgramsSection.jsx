@@ -1,44 +1,7 @@
 import "./ProgramsSection.css";
-
-
-const programs = [
-  {
-    title: "Idea Validation Program",
-   description:
-  "• Validate business ideas through market research.\n\n" +
-  "• Understand customer needs and problems.\n\n" +
-  "• Build a strong business model.\n\n" +
-  "• Develop product and market strategies.\n\n" +
-  "• Prepare ideas for startup launch."
-  },
-  {
-    title: "Pre Incubation Program",
-    description:
-  "• Learn startup fundamentals.\n\n" +
-  "• Plan products and prototypes.\n\n" +
-  "• Get business registration guidance.\n\n" +
-  "• Prepare investor-ready pitches.\n\n" +
-  "• Turn ideas into MVP-ready startups."
-  },
-  {
-    title: "Incubation Program",
-    description:
-  "• Receive dedicated mentorship.\n\n" +
-  "• Access technical and business support.\n\n" +
-  "• Develop products and marketing strategies.\n\n" +
-  "• Get legal and financial guidance.\n\n" +
-  "• Build and grow your startup."
-  },
-  {
-    title: "Accelaration Program",
-    description:
-  "• Prepare for fundraising and investment.\n\n" +
-  "• Scale products and business operations.\n\n" +
-  "• Expand into global markets.\n\n" +
-  "• Grow customers and revenue.\n\n" +
-  "• Build high-performing startup teams."
-  }
-];
+import { motion } from "framer-motion";
+import programsImage from "../../assets/images/programs/programs-banner.png";
+import { Link } from "react-router-dom";
 
 
 const ProgramsSection = () => {
@@ -47,51 +10,122 @@ const ProgramsSection = () => {
 
     <section className="landing-programs">
 
-      <div className="programs-container">
+
+      <div className="landing-programs-container">
 
 
-        <div className="programs-header">
+        {/* Left Content */}
 
-          <h2>
+        <motion.div
+
+          className="landing-programs-content"
+
+          initial={{
+            opacity:0,
+            x:-50
+          }}
+
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
+
+          transition={{
+            duration:0.6
+          }}
+
+          viewport={{
+            once:true
+          }}
+
+        >
+
+
+          <p className="program-tag">
+
             Our Programs
-          </h2>
 
-          <p>
-            Structured programs designed to help startups grow at every stage.
           </p>
 
-        </div>
+
+
+          <h2>
+
+            Structured Programs To Build Successful Startups
+
+          </h2>
 
 
 
-        <div className="programs-cards">
+          <p className="program-description">
+
+            We help startups at every stage with idea validation,
+            incubation support, mentorship, technical guidance,
+            and investor readiness programs.
+
+          </p>
 
 
-          {
-            programs.map((program,index)=>(
 
-              <div
-                className="program-card"
-                key={index}
-              >
+          <Link
 
-                <h3>
-                  {program.title}
-                </h3>
+            to="/programs"
 
+            className="program-btn"
 
-                <p>
-                  {program.description}
-                </p>
+          >
+
+            Explore Programs
+
+          </Link>
 
 
-              </div>
 
-            ))
-          }
+        </motion.div>
 
 
-        </div>
+
+
+
+        {/* Right Image */}
+
+
+        <motion.div
+
+          className="landing-programs-image"
+
+          initial={{
+            opacity:0,
+            x:50
+          }}
+
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
+
+          transition={{
+            duration:0.6
+          }}
+
+          viewport={{
+            once:true
+          }}
+
+        >
+
+
+          <img
+
+            src={programsImage}
+
+            alt="Startup Programs"
+
+          />
+
+
+        </motion.div>
+
 
 
       </div>

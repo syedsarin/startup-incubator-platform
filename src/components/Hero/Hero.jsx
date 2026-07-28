@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./Hero.css";
-
+import { Link } from "react-router-dom";
 function Hero() {
 
   return (
@@ -49,30 +49,36 @@ function Hero() {
 
 
 
-        <div className="hero-actions">
+        <div className="hero-buttons">
 
 
-          <button className="hero-primary">
-            Apply Now
-          </button>
+  <Link
+    to="/register"
+    className="hero-primary"
+  >
+    Apply Now
+  </Link>
 
 
-          <button className="hero-secondary">
-            Explore Programs
-          </button>
 
-          <button className="hero-primary">
-            Join Community
-          </button>
-
-
-          <button className="hero-secondary">
-            Book Consultation
-          </button>
-
-        </div>
+  <Link
+    to="/programs"
+    className="hero-secondary"
+  >
+    Explore Programs
+  </Link>
 
 
+
+  <Link
+    to="/consultation"
+    className="hero-secondary"
+  >
+    Book Consultation
+  </Link>
+
+
+</div>
 
       </motion.div>
 

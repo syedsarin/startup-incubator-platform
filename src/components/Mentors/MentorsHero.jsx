@@ -1,65 +1,100 @@
 import "./MentorsHero.css";
 import { motion } from "framer-motion";
-import { Users, ArrowRight } from "lucide-react";
+import { Users } from "lucide-react";
+import mentorsHeroImage from "../../assets/images/mentors/mentors-hero.png";
+
 
 function MentorsHero() {
-  return (
-    <section className="mentors-hero">
 
-      <div className="mentors-hero-container">
+
+  return (
+
+    <section
+
+      className="mentors-hero"
+
+      style={{
+
+        backgroundImage: `linear-gradient(
+          rgba(15,23,42,0.65),
+          rgba(15,23,42,0.65)
+        ), url(${mentorsHeroImage})`
+
+      }}
+
+    >
+
+
+      <div className="mentors-container">
+
 
         <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+
+          initial={{
+            opacity:0,
+            y:30
+          }}
+
+          animate={{
+            opacity:1,
+            y:0
+          }}
+
+          transition={{
+            duration:0.6
+          }}
+
           className="mentors-hero-content"
+
         >
+
+
 
           <div className="mentors-badge">
 
-            <Users size={18} />
+            <Users size={18}/>
 
-            Learn From Industry Experts
+            Startup Mentors
 
           </div>
+
+
+
 
           <h1>
 
-            Meet Our
+            Learn From Experts
 
-            <span>Expert Mentors</span>
+            <span>
+              Build Your Success Story
+            </span>
 
           </h1>
 
+
+
+
           <p>
 
-            Learn from experienced entrepreneurs, investors, and
-            industry leaders who guide startups through every stage
-            of their journey, from idea validation to business growth.
+            Connect with experienced founders, industry experts,
+            and successful entrepreneurs who provide guidance,
+            mentorship, and strategic support to help startups grow.
 
           </p>
 
-          <div className="mentors-buttons">
 
-            <button className="primary-btn">
-
-              Connect Now
-
-              <ArrowRight size={18} />
-
-            </button>
-
-            
-
-          </div>
 
         </motion.div>
 
+
       </div>
 
+
     </section>
+
   );
+
 }
+
 
 export default MentorsHero;

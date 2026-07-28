@@ -2,9 +2,17 @@
 
   width:100%;
 
-  padding:100px 0;
+  min-height:70vh;
 
-  background:#f8fafc;
+  display:flex;
+
+  align-items:center;
+
+  background-size:cover;
+
+  background-position:center 20%;
+
+  background-repeat:no-repeat;
 
 }
 
@@ -26,7 +34,7 @@
 
 .services-hero-content {
 
-  max-width:900px;
+  max-width:850px;
 
   margin:auto;
 
@@ -48,13 +56,15 @@
 
   border-radius:999px;
 
-  background:#dbeafe;
+  background:rgba(219,234,254,0.15);
 
-  color:#2563eb;
+  color:#bfdbfe;
 
   font-size:14px;
 
-  font-weight:700;
+  font-weight:600;
+
+  backdrop-filter:blur(10px);
 
 }
 
@@ -62,7 +72,7 @@
 
 .services-hero h1 {
 
-  margin-top:32px;
+  margin-top:30px;
 
   font-size:60px;
 
@@ -70,7 +80,7 @@
 
   font-weight:800;
 
-  color:#0f172a;
+  color:#ffffff;
 
 }
 
@@ -80,7 +90,7 @@
 
   display:block;
 
-  color:#2563eb;
+  color:#60a5fa;
 
 }
 
@@ -88,15 +98,15 @@
 
 .services-hero p {
 
-  max-width:700px;
+  max-width:750px;
 
   margin:24px auto 0;
+
+  color:#e2e8f0;
 
   font-size:18px;
 
   line-height:1.8;
-
-  color:#64748b;
 
 }
 
@@ -104,17 +114,26 @@
 
 @media(max-width:768px){
 
-.services-hero h1{
 
-font-size:38px;
+.services-hero{
+
+  min-height:60vh;
 
 }
 
 
 .services-container{
 
-padding:0 16px;
+  padding:0 16px;
 
 }
+
+
+.services-hero h1{
+
+  font-size:38px;
+
+}
+
 
 }

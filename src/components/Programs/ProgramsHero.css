@@ -2,9 +2,31 @@
 
   width:100%;
 
-  padding:100px 0;
+  height:500px;
 
-  background:#eff6ff;
+  display:flex;
+
+  align-items:center;
+
+  background-size:cover;
+
+  background-position:center 30%;
+
+  background-repeat:no-repeat;
+
+  overflow:hidden;
+
+}
+
+.program-card img {
+
+  width:100%;
+
+  height:220px;
+
+  object-fit:cover;
+
+  border-radius:20px 20px 0 0;
 
 }
 
@@ -22,6 +44,7 @@
 }
 
 
+
 .programs-hero-content {
 
   max-width:900px;
@@ -31,6 +54,7 @@
   text-align:center;
 
 }
+
 
 
 
@@ -46,15 +70,18 @@
 
   border-radius:999px;
 
-  background:#dbeafe;
+  background:rgba(219,234,254,0.15);
 
-  color:#2563eb;
+  color:#bfdbfe;
 
   font-weight:600;
 
   font-size:14px;
 
+  backdrop-filter:blur(10px);
+
 }
+
 
 
 
@@ -68,18 +95,20 @@
 
   font-weight:800;
 
-  color:#0f172a;
+  color:#ffffff;
 
 }
+
 
 
 .programs-hero h1 span {
 
   display:block;
 
-  color:#2563eb;
+  color:#60a5fa;
 
 }
+
 
 
 
@@ -93,25 +122,36 @@
 
   line-height:1.8;
 
-  color:#64748b;
+  color:#e2e8f0;
 
 }
+
+
 
 
 
 @media(max-width:768px){
 
-.programs-hero h1{
 
-font-size:38px;
+  .programs-hero {
 
-}
+    min-height:60vh;
+
+  }
 
 
-.programs-container{
+  .programs-hero h1 {
 
-padding:0 16px;
+    font-size:38px;
 
-}
+  }
+
+
+  .programs-container {
+
+    padding:0 16px;
+
+  }
+
 
 }
