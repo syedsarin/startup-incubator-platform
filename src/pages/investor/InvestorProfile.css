@@ -1,0 +1,117 @@
+.investor-profile{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    margin:30px;
+}
+
+.investor-profile-header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+}
+
+.investor-avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#2563eb;
+    color:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    font-weight:700;
+}
+
+.investor-profile-header h2{
+    font-size:30px;
+    color:#0f172a;
+    margin-bottom:8px;
+}
+
+.investor-profile-header p{
+    color:#64748b;
+    line-height:1.6;
+}
+
+.investor-profile-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.investor-profile-card{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+}
+
+.investor-profile-card h3{
+    font-size:22px;
+    color:#0f172a;
+    margin-bottom:25px;
+}
+
+.profile-row{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:15px 0;
+    border-bottom:1px solid #f1f5f9;
+    color:#475569;
+}
+
+.profile-row:last-child{
+    border-bottom:none;
+}
+
+.profile-row svg{
+    color:#2563eb;
+}
+
+.edit-investor-btn{
+    margin-top:25px;
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.edit-investor-btn:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:768px){
+
+    .investor-profile{
+        margin:20px;
+    }
+
+    .investor-profile-header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .investor-profile-grid{
+        grid-template-columns:1fr;
+    }
+
+    .investor-profile-header h2{
+        font-size:26px;
+    }
+
+}

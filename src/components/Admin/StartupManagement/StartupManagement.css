@@ -1,0 +1,152 @@
+
+.startup-management{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    margin:30px;
+}
+
+.startup-header{
+    text-align:center;
+}
+
+.startup-header h2{
+    font-size:32px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.startup-header p{
+    max-width:650px;
+    margin:0 auto;
+    color:#64748b;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.startup-table-wrapper{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+    overflow-x:auto;
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+}
+
+.startup-table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:900px;
+}
+
+.startup-table thead{
+    background:#f8fafc;
+}
+
+.startup-table th{
+    padding:18px;
+    text-align:left;
+    font-size:15px;
+    font-weight:700;
+    color:#334155;
+}
+
+.startup-table td{
+    padding:18px;
+    border-top:1px solid #e2e8f0;
+    color:#475569;
+    font-size:15px;
+}
+
+.startup-table tbody tr{
+    transition:.3s;
+}
+
+.startup-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+.status{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.status.pending{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.status.approved{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status.rejected{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.action-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.action-buttons button{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    border:none;
+    border-radius:10px;
+    padding:10px 14px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.view-btn{
+    background:#2563eb;
+    color:#ffffff;
+}
+
+.view-btn:hover{
+    background:#1d4ed8;
+}
+
+.approve-btn{
+    background:#16a34a;
+    color:#ffffff;
+}
+
+.approve-btn:hover{
+    background:#15803d;
+}
+
+.reject-btn{
+    background:#dc2626;
+    color:#ffffff;
+}
+
+.reject-btn:hover{
+    background:#b91c1c;
+}
+
+@media(max-width:768px){
+
+    .startup-management{
+        margin:20px;
+    }
+
+    .startup-header h2{
+        font-size:28px;
+    }
+
+    .startup-table{
+        min-width:850px;
+    }
+
+}

@@ -1,0 +1,32 @@
+.investor-dashboard-hero{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:#fff;
+    border-radius:20px;
+    padding:45px;
+    margin:30px;
+}
+
+.hero-content h1{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:17px;
+    max-width:650px;
+    line-height:1.8;
+    opacity:.95;
+}
+
+@media(max-width:768px){
+
+    .investor-dashboard-hero{
+        margin:20px;
+        padding:30px;
+    }
+
+    .hero-content h1{
+        font-size:30px;
+    }
+
+}

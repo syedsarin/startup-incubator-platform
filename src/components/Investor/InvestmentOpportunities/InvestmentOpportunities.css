@@ -1,0 +1,133 @@
+.investment-opportunities{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    margin:30px;
+}
+
+.investment-header{
+    text-align:center;
+}
+
+.investment-header h2{
+    font-size:32px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.investment-header p{
+    max-width:650px;
+    margin:0 auto;
+    color:#64748b;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.investment-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.investment-card{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    border-radius:22px;
+    padding:28px;
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+    transition:.3s;
+}
+
+.investment-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(15,23,42,.12);
+}
+
+.investment-logo{
+    width:80px;
+    height:80px;
+    border-radius:18px;
+    background:#dbeafe;
+    color:#2563eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.investment-card h3{
+    font-size:24px;
+    color:#0f172a;
+    margin-bottom:22px;
+}
+
+.investment-info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.investment-info p{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #f1f5f9;
+    padding-bottom:10px;
+}
+
+.investment-info strong{
+    color:#334155;
+    font-size:15px;
+}
+
+.investment-info span{
+    color:#64748b;
+    font-size:15px;
+}
+
+.view-details-btn{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.view-details-btn:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:992px){
+
+    .investment-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .investment-opportunities{
+        margin:20px;
+    }
+
+    .investment-header h2{
+        font-size:28px;
+    }
+
+    .investment-grid{
+        grid-template-columns:1fr;
+    }
+
+}

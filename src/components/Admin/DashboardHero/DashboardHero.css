@@ -1,0 +1,32 @@
+.admin-dashboard-hero{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#ffffff;
+    border-radius:20px;
+    padding:45px;
+    margin:30px;
+}
+
+.admin-hero-content h1{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.admin-hero-content p{
+    max-width:700px;
+    font-size:17px;
+    line-height:1.8;
+    opacity:.9;
+}
+
+@media(max-width:768px){
+
+    .admin-dashboard-hero{
+        margin:20px;
+        padding:30px;
+    }
+
+    .admin-hero-content h1{
+        font-size:30px;
+    }
+
+}
